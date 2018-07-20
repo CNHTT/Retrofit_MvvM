@@ -9,6 +9,15 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        manifestPlaceholders = [
+                GETUI_APP_ID : "pLwzGK2cic893TGEBs0hr1",
+                GETUI_APP_KEY : "GV1GKjyTeT9iupIDwDwLa",
+                GETUI_APP_SECRET : "GxlByTr03hAVqZ8K1QtYz3"
+        ]
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a", "x86_64"
+        }
     }
     buildTypes {
         release {
@@ -26,4 +35,6 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     api project(':retrofit')
+    implementation 'com.getui:sdk:2.12.4.0'
+
 }

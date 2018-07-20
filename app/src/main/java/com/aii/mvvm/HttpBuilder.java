@@ -29,6 +29,7 @@ public class HttpBuilder {
     private Error errorCallBack;
     private Success successCallBack;
     private Progress progressListener;
+
     Object tah;
     Context mContext;
     boolean checkNetConnected =false;
@@ -39,6 +40,7 @@ public class HttpBuilder {
     }
 
     public void setParams(String params) {
+
     }
 }
 
